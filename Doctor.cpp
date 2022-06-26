@@ -9,11 +9,11 @@ int hasta_sayisi(){
 	int kelime=0;
 	do{
 		ch=getc(siradaki_hastalar);
-		if(ch=='\n'){ //Her alt satýra geçildiðinde kelime deðiþkenini artýrdý
+		if(ch=='\n'){ //Her alt satira gecildiginde kelime degiskenini artirdi
 			kelime++;
 		}
 		
-	}while(ch!=EOF); //Dosyanýn sonuna kadar okudu
+	}while(ch!=EOF); //Dosyanin sonuna kadar okudu
 	return kelime;
 }
 
@@ -40,19 +40,19 @@ int main(){
     printf("\nSistemi Sifirla [2]\n:");
     scanf("%d",&girdi);
     if(girdi==1){
-    	fscanf(siradaki_hastalar,"\n"); //Sýradaki hastayý okuyacaðý için alt satýra geçti
+    	fscanf(siradaki_hastalar,"\n"); //Siradaki hastayi okuyacagi icin alt satira geçti
     	goto mark;
 	}
     else if(girdi==2){
-    	FILE *siradaki=fopen("siradaki.txt","w"); //Dosyanýn içindekileri sildi ve yeniden oluþturdu.
-        FILE *sira_no=fopen("sira.txt","w"); //Dosyanýn içindekileri sildi ve yeniden oluþturdu.
+    	FILE *siradaki=fopen("siradaki.txt","w"); //Dosyanin icindekileri sildi ve yeniden olusturdu
+        FILE *sira_no=fopen("sira.txt","w"); //Dosyanin icindekileri sildi ve yeniden olusturdu
         fprintf(siradaki,"0 Sistem Sifirlandi");
         fprintf(sira_no,"0 Sistem Sifirlandi\n");
-        fclose(siradaki); //Dosyayý kaydetti
-        fclose(sira_no); //Dosyayý kaydetti
+        fclose(siradaki); //Dosyayi kaydetti
+        fclose(sira_no); //Dosyayi kaydetti
         system("cls"); //Konsolu temizledi
 	}
-    fclose(siradaki_hastalar); //Dosyayý kaydetti
+    fclose(siradaki_hastalar); //Dosyayi kaydetti
     Sleep(100);
     system("cls");   
     }

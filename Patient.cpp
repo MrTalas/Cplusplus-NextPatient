@@ -9,11 +9,11 @@ int hasta_sayisi(){
 	int kelime=0;
 	do{
 		ch=getc(siradaki_hastalar);
-		if(ch=='\n'){ //Her alt satýra geçildiðinde kelime deðiþkenini artýrdý
+		if(ch=='\n'){ //Her alt satira gecildiginde kelime degiskenini artirdi
 			kelime++;
 		}
 		
-	}while(ch!=EOF); //Dosyanýn sonuna kadar okudu
+	}while(ch!=EOF); //Dosyanin sonuna kadar okudu
 	return kelime;
 }
 
@@ -27,7 +27,7 @@ int main(){
     while(1){
     FILE *sira_no=fopen("sira.txt","a");
     printf("\tHasta Kayit Sistemi V1");
-    sira=hasta_sayisi(); //Mevcut hasta sayýsý
+    sira=hasta_sayisi(); //Mevcut hasta sayisi
     //printf("\nSiradaki Kisi Sayisi %d",sira-1);
     printf("\nSira Al [1]");
     scanf("%d",&sira_al);
@@ -38,7 +38,7 @@ int main(){
         printf("\nSoyad Giriniz:");
         fflush(stdin);
         gets(hasta_soyadi);
-        fprintf(sira_no,"%d %s %s\n",sira,hasta_adi,hasta_soyadi); ://Hasta bilgilerini dosyaya yazdý
+        fprintf(sira_no,"%d %s %s\n",sira,hasta_adi,hasta_soyadi); //Hasta bilgilerini dosyaya yazdi
         printf("\nKayit Basarili Sira No %d\n",sira);
         Sleep(2000);
         system("cls");
