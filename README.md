@@ -4,6 +4,12 @@ Patient Administration System
 
 Hasta Yönetim Sistemi
 
+-Doctor.exe to accept the next patient
+
+-Patient.exe to register in the patient queue
+
+-Next_Patient.exe to display the next patient
+
 
 
 <br/>
