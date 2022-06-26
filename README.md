@@ -1,14 +1,14 @@
 # Cplusplus-NextPatient
 
-Patient Administration System
+## Patient Administration System - Hasta Yönetim Sistemi
 
-Hasta Yönetim Sistemi
 
--Doctor.exe to accept the next patient
 
--Patient.exe to register in the patient queue
+- Doctor.exe to accept the next patient
 
--Next_Patient.exe to display the next patient
+- Patient.exe to register in the patient queue
+
+- Next_Patient.exe to display the next patient
 
 
 
